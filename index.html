@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="">
+        <header class="flex items-center justify-between  py-4 bg  px-4 sm:px-16 ">
+            <div class="flex gap-5">
+                <img src="./afrique.png"  class="object-contain w-[24px] sm:w-[40px]">
+                <div class="flex flex-col">
+                    <p class="font-bold text-[15px] sm:text-[20px]">AfriVoyage</p>
+                    <p class="text-[12px] sm:text-sm text-gray-500">Explorez l'Afrique</p>
+                </div>
+            </div>
+            <div class="menu-nav hidden sm:block">
+                <ul class="flex gap-[60px]">
+                    <li>Acceuil</li>
+                    <li>Destinations</li>
+                    <li>À propos</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <a href="" class="py-2 px-5 bg-green-700 rounded-lg text-white flex gap-4 items-center font-bold ease-in-out duration-300 hover:bg-green-900 text-sm hidden sm:block">Planifier un voyage</a>
+           <!-- !mobile menu -->
+            <div class="btn-menu">
+                <i class="fa-solid fa-bars  sm:hidden text-3xl cursor-pointer text-green-900"></i>
+            </div>
+             <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full h-screen bg-white shadow-xl rounded-xl p-6 z-50">
+                <ul class="flex flex-col gap-6 text-center font-semibold nav-mob">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Nos plantes</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Conseils</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('./background.jpg')] h-[78vh] bg-cover px-4 sm:px-16">
+                <div class="flex flex-col gap-4">
+                    <div class="text-[45px] sm:text-[60px] text-white mt-17 sm:mt-12 font-bold">
+                        <p class="">Explorez</p>
+                        <p>l'Afrique</p>
+                    </div>
+                    <div class="text-[13px] sm:text-[18px] text-white">
+                        <p>Des destinations incroyables, des cultures</p>
+                        <p>riches et des expériences inoubliables</p>
+                        <p>vous attend.</p>
+                    </div>
+                    <a href="#" class=" text-[12px] sm:text-md w-[216px] sm:w-[290px]  mt-5 sm:mt-2 py-3 px-5 bg-green-700 rounded-[30px]  text-white flex gap-1 sm:gap-4 items-center font-bold ease-in-out duration-300 hover:bg-green-900">Découvrir les destinations <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+            <section class="px-4 sm:px-16 absolute w-full top-[82vh]">
+                <div class="flex justify-between items-center py-5 px-8 shadow-lg rounded-[15px] bg-white">
+                    <div class="flex items-center gap-5">
+                        <i class="fa-solid fa-location-dot text-[20px] sm:text-[32px] text-green-700"></i>
+                        <div class="text-[10px] sm:text-sm text-gray-600">
+                            <p>Ou voulez-vous aller ?</p>
+                            <p>Destination</p>
+                        </div>
+                    </div>
+                    <div class=" h-[60px] w-[1px] bg-gray-300"></div>
+                    <div class="flex items-center gap-5">
+                        <i class="fa-regular fa-calendar text-[20px] sm:text-[32px] text-green-700"></i>
+                        <div class="text-[10px] sm:text-sm text-gray-600">
+                            <p>Date</p>
+                            <p>Sélectionners</p>
+                        </div>
+                    </div>
+                    <div class=" h-[60px] w-[1px] bg-gray-300"></div>
+                    <div class="flex items-center gap-5">
+                        <i class="fa-solid fa-user text-[20px] sm:text-[32px] text-green-700"></i>
+                        <div class="text-[10px] sm:text-sm text-gray-600">
+                            <p>Voyageur ?</p>
+                            <p>2 voyageurs</p>
+                        </div>
+                    </div>
+                    <a href="" class="py-2 sm:py-3 px-2 sm:px-5 bg-green-700 rounded-lg  text-white flex gap-1 sm:gap-4 items-center font-bold text-[10px] sm:text-sm hover:bg-green-900 duration-300 ease-in-out">Rechercher <i class="fa-solid fa-magnifying-glass text-[14px] sm:text-[20px] "></i></a>
+                </div>
+            </section>
+            <section class="px-4 sm:px-16 mt-[100px] ">
+                <div class="reveal">
+                    <p class="font-bold text-green-900 text-[12px] sm:text-md">DESTINATIONS POPULAIRES</p>
+                    <p class="text-[15px] sm:text-[27px] font-bold mt-[5px]">Découvrez des pays incroyables</p>
+                </div>
+                <a href="" class="text-green-900  flex gap-[10px] items-center justify-end  hover:text-green-950 duration-300 ease-out text-[10px] sm:text-md">Voir toutes les destinations <i class="fa-solid fa-arrow-right text-[20px] sm:text-[20px] "></i></a>
+                <div class=" mt-[40px]  overflow-hidden">
+                    <div class="container-ville flex gap-[45px] sm:justify-between items-center">
+                        <div class=" w-[220px] rounded-[15px] ctn-ville">
+                            <div class="h-[250px] w-full overflow-hidden rounded-t-[15px]">
+                                <img src="./egypte.jpg" alt="" class="w-full h-full object-cover ">
+                            </div>
+                            <div class="text-[8px] sm:text-[12px] text-gray-700 mt-[15px] w-[220px] sm:w-full px-[10px] py-[10px] flex flex-col gap-[5px]">
+                                <p class="font-bold text-[12px] sm:text-[21px] text-black">Égypte</p>
+                                <p>Histoire milénaire et</p>
+                                <p class="flex gap-[50px] items-center">merveilles antique <i class="fa-solid fa-arrow-right text-[20px] text-green-800"></i></p>
+                            </div>
+                        </div>
+                        <div class=" w-[220px] rounded-[15px] ctn-ville">
+                            <div class="h-[250px] w-full overflow-hidden rounded-t-[15px]">
+                                <img src="./maroc.jpg" alt="" class="w-full h-full object-cover ">
+                            </div>
+                            <div class="text-[8px] sm:text-[12px] text-gray-700 mt-[15px] w-[220px] sm:w-full px-[10px] flex flex-col gap-[5px] py-[10px]">
+                                <p class="font-bold text-[12px] sm:text-[21px] text-black">Maroc</p>
+                                <p>Culture, traditions et</p>
+                                <p class="flex gap-[50px] items-center">hospitalité<i class="fa-solid fa-arrow-right text-[20px] text-green-800"></i></p>
+                            </div>
+                        </div>
+                        <div class=" w-[220px] rounded-[15px] ctn-ville">
+                            <div class="h-[250px] w-full overflow-hidden rounded-t-[15px]">
+                                <img src="./zambie.jpg" alt="" class="w-full h-full object-cover ">
+                            </div>
+                            <div class="text-[8px] sm:text-[12px] text-gray-700 mt-[15px] w-[220px] sm:w-full px-[10px] flex flex-col gap-[5px] py-[10px]">
+                                <p class="font-bold text-[12px] sm:text-[21px] text-black">Zambie</p>
+                                <p>Chutes spétaculaires et</p>
+                                <p class="flex gap-[50px] items-center">nature sauvage<i class="fa-solid fa-arrow-right text-[20px] text-green-800"></i></p>
+                            </div>
+                        </div>
+                        <div class="w-[220px] rounded-[15px] ctn-ville">
+                            <div class="h-[250px] w-full overflow-hidden rounded-t-[15px]">
+                                <img src="./tanzanie.jpg" alt="" class="w-full h-full object-cover ">
+                            </div>
+                            <div class="text-[8px] sm:text-[12px] text-gray-700 mt-[15px] w-[220px] sm:w-full px-[10px] flex flex-col gap-[5px] py-[10px]">
+                                <p class="font-bold text-[12px] sm:text-[21px] text-black">Tansanie</p>
+                                <p>Safaris, plages paradisiaque</p>
+                                <p class="flex gap-[50px] items-center">et aventures<i class="fa-solid fa-arrow-right text-[20px] text-green-800"></i></p>
+                            </div>
+                        </div>
+                        <div class="w-[220px] rounded-[15px] ctn-ville">
+                            <div class="h-[250px] w-full overflow-hidden rounded-t-[15px]">
+                                <img src="./côte d'ivoire.jpg" alt="" class="w-full h-full object-cover ">
+                            </div>
+                            <div class="text-[8px] sm:text-[12px] text-gray-700 mt-[15px] w-[220px] sm:w-full px-[10px] flex flex-col gap-[5px] py-[10px]">
+                                <p class="font-bold text-[12px] sm:text-[21px] text-black">Côte d'Ivoire</p>
+                                <p>une terre de culture,</p>
+                                <p class="flex gap-[50px] items-center">d'histoire inoubliables.<i class="fa-solid fa-arrow-right text-[20px] text-green-800"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 sm:px-16 mt-[50px] py-[30px] bg-gray-100">
+                <div class="flex justify-start sm:items-center gap-[20px] sm:justify-between  flex-col sm:flex-row">
+                    <div class="flex flex-col gap-[20px]">
+                        <p class=" text-green-900 text-[11px] sm:text-md">POURQUOI VOYAGER AVEC NOUS ?</p>
+                        <p class="font-bold text-[15px] sm:text-[25px]">Des expériences authentiques</p>
+                        <div class="flex items-center gap-[35px]">
+                            <div class="flex gap-[12px] sm:gap-[15px] ">
+                                <i class="fa-solid fa-shield-halved text-[20px] sm:text-[32px] text-green-900"></i>
+                                <div class="">
+                                    <p class="text-[13px] sm:text-[15px] font-bold">Sécurité garantie</p>
+                                    <p class="text-[11px] sm:text-sm text-gray-700">Votre sécurité est notre <br> priorité absolue.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-[10px] sm:gap-[15px]">
+                                <i class="fa-solid fa-user-group text-[20px] sm:text-[32px] text-green-900"></i>
+                                <div class="">
+                                    <p class="text-[13px] sm:text-[15px] font-bold">Guides locaux</p>
+                                    <p class="text-[11px] sm:text-sm text-gray-700">Des experts passionnés <br> pour vous faire découvrir <br> l'Afrique autrement.</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <i class="fa-solid fa-tag text-[20px] sm:text-[32px] text-green-900" style="transform: scaleX(-1);"></i>
+                                <div class="text-[10px] sm:text-sm">
+                                    <p class="text-[13px] sm:text-[15px] font-bold">Meilleurs prix</p>
+                                    <p class="text-[11px] sm:text-sm text-gray-700">Des voyages de qualité <br> au meilleur prix.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[280px] sm:w-[450px] h-[200px] sm:h-[230px] overflow-hidden rounded-[15px] hover:shadow-2xl ">
+                        <img src="./image.jpg" alt="" class="w-full hover:scale-125  duration-300 ease-in cursor-pointer">
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 sm:px-16">
+                <div class="flex items-center px-4 sm:px-8 py-[16px] sm:py-[20px]  justify-between my-[30px] ctn-form rounded-lg">
+                    <div class="flex items-center gap-[30px]">
+                        <i class="fa-regular fa-envelope text-[18px] sm:text-[32px] text-green-800 bg-green-200 px-[18px] py-[18px] rounded-[50%]"></i>
+                        <div class="flex flex-col">
+                            <p class="text-[10px] sm:text-md font-bold">Recevez nos offres et conseils de voyage</p>
+                            <p class="text-[8px] sm:text-[12px]">Inscriver-vous à notre newsletter et ne marquez rien !</p>
+                        </div>
+                    </div>
+                    <div class="flex items-end sm:items-center gap-[5px] sm:gap-[30px] flex-col sm:">
+                        <input type="email" class="border-1 border-gray-300 h-[30px] sm:h-[40px] w-[210px] sm:w-[350px] pl-[12px] text-[10px] sm:text-[13px] rounded-lg" placeholder="Votre adresse email">
+                        <button class="h-[30px] sm:h-[40px] w-[110px] sm:w-[150px] bg-green-900 rounded-md text-white font-bold hover:bg-green-950 duration-300 ease-in cursor-pointer text-[12px] sm:text-md">S'inscrire</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+  </body>
+  <footer class="px-4 sm:px-16 bg-gray-100">
+    <div class="flex justify-between items-center">
+        <div class="flex gap-5">
+            <img src="./afrique.png" alt="" class="w-[20px] sm:w-[40px] object-contain ">
+            <div class="flex flex-col">
+                <p class="text-[12px] sm:text-[20px] font-bold">AfriVoyage</p>
+                <p class="text-[9px] sm:text-sm text-gray-500">Explorez,Rêve,Vivez l'Afrique</p>
+                <p class="text-[9px] sm:text-sm">©2026 AfriVoyage. Tous droits réservés</p>
+            </div>
+
+        </div>
+        <div class="text-[9px] sm:text-[12px]">
+            <ul class="flex flex-col gap-[5px]">
+                <li class="text-[11px] sm:text-[15px] font-bold">Liens utiles</li>
+                <li>Acceuil</li>
+                <li>Destination</li>
+                <li>À propos</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="text-[8px] sm:text-[12px]">
+            <ul class="flex flex-col gap-[5px]">
+                <li class="text-[11px] sm:text-[15px] font-bold">Informations</li>
+                <li>FAQ</li>
+                <li>Conditions générales</li>
+                <li>Politique de confidentialté</li>
+                <li>Mentions légales</li>
+            </ul>
+        </div>
+        <div class="text-[8px] sm:text-[12px]">
+            <ul class="flex flex-col gap-[5px]">
+                <li class="text-[11px] sm:text-[15px] font-bold" >Contact</li>
+                <li class="flex gap-[7px]"><i class="fa-solid fa-phone"></i>+228 00 00 00 00</li>
+                <li class="flex gap-[7px]"><i class="fa-solid fa-envelope"></i>AfriVoyage@gmail.com</li>
+                <li class="flex gap-[7px]"><i class="fa-solid fa-location-dot"></i>Lomé,TOGO</li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+</html>
