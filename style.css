@@ -82,3 +82,8 @@ input:focus{
         transform: translateX(90vw);
     }
 }
+@media (max-width: 640px) {
+    .container-ville:hover{
+        animation-play-state:running;
+    }
+}
